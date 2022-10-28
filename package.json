@@ -20,7 +20,8 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all --print-name \"lint\" \"test:*\"",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "tauri": "tauri"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -65,5 +66,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.1.0",
+    "@tauri-apps/cli": "^1.1.1"
   }
 }
