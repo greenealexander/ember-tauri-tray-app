@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "ember-tauri-test",
+    "productName": "ember-tauri-tray-app",
     "version": "0.1.0"
   },
   "tauri": {
@@ -33,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "ember.tauri.test",
+      "identifier": "ember.tauri.tray.app",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

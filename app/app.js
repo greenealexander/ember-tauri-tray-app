@@ -12,7 +12,7 @@ export default class App extends Application {
   constructor(owner, args) {
     super(owner, args);
 
-    if ('Notification' in window && Notification.permission === 'default') {
+    if ('Notification' in window && Notification.permission !== 'granted') {
       try {
         Notification.requestPermission();
       } catch (error) {
