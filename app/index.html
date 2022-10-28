@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden; padding: 0; margin: 0">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>EmberTauriTest</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/ember-tauri-test.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link
+      integrity=""
+      rel="stylesheet"
+      href="{{rootURL}}assets/ember-tauri-test.css"
+    />
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body
+    style="
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    "
+  >
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>

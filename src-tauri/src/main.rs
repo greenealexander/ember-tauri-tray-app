@@ -17,9 +17,9 @@ fn main() {
                 } else {
                     window
                         .set_position(Position::Physical(PhysicalPosition {
-                            x: (position.x - (window.inner_size().unwrap().width / 2) as f64)
+                            x: (position.x - ((window.inner_size().unwrap().width / 2) as f64))
                                 as i32,
-                            y: position.y as i32,
+                            y: 0,
                         }))
                         .unwrap();
                     window.show().unwrap();
@@ -33,16 +33,6 @@ fn main() {
             } => {
                 println!("system tray received a right click");
             }
-            // SystemTrayEvent::MenuItemClick { id, .. } => match id.as_str() {
-            //     "quit" => {
-            //         std::process::exit(0);
-            //     }
-            //     "hide" => {
-            //         let window = app.get_window("main").unwrap();
-            //         window.hide().unwrap();
-            //     }
-            //     _ => {}
-            // },
             _ => {}
         })
         .build(tauri::generate_context!())

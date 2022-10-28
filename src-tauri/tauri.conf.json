@@ -59,14 +59,15 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 400,
-        "resizable": false,
-        "title": "ember-tauri-test",
         "width": 300,
+        "height": 400,
+        "fullscreen": false,
+        "resizable": false,
         "alwaysOnTop": true,
-        "decorations": false
+        "decorations": false,
+        "transparent": true
       }
-    ]
+    ],
+    "macOSPrivateApi": true
   }
 }

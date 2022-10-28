@@ -9,11 +9,18 @@ export default class App extends Application {
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
 
-  constructor() {
-    super();
+  constructor(owner, args) {
+    super(owner, args);
+
+    if ('Notification' in window && Notification.permission === 'default') {
+      try {
+        Notification.requestPermission();
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
     window?.addEventListener('blur', () => {
-      console.log('window blurred');
       appWindow.hide();
     });
   }
